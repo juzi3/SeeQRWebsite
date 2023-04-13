@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 *{
     margin: 0;
     padding: 0;
@@ -21,3 +20,7 @@
   .slideIn {
     animation: 1s ease-out 0s 1 slideInLeft;
   }
+
+.parallax {
+    height: 100px;
+}

@@ -44,4 +44,4 @@ const NavBar = ({showFadeEffect = true}) => {
     )
 }
 
-export default NavBar
+export default NavBar;

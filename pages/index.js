@@ -1,4 +1,5 @@
-import NavBar from '../components/NavBar';
+import NavBar from "../components/NavBar";
+
 import MainPageIntro from '../components/MainPageIntro';
 import Demo from '../components/Demo';
 
