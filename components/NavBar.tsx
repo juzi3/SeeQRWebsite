@@ -1,10 +1,9 @@
-
-
 const NavBar = () => {
-    return(
-        <div><h1 className="bg-blue-100">test</h1></div>
+  return (
+    <div>
+      <h1 className="bg-blue-100">test</h1>
+    </div>
+  );
+};
 
-    )
-}
-
-export default NavBar
+export default NavBar;
