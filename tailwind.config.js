@@ -9,7 +9,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '100': '25rem',
+        '75': '18.75rem',
+        '50': '12.5rem',
+        '30': '7.5rem',
+        '25': '6.25rem',
+
+      },
+    },
   },
   plugins: [],
 }
