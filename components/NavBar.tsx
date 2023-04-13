@@ -2,7 +2,7 @@
 
 const NavBar = () => {
     return(
-        <div><h1>test</h1></div>
+        <div><h1 className="bg-blue-100">test</h1></div>
 
     )
 }
