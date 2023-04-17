@@ -6,7 +6,7 @@ import logoBottom from "../assets/4_720.png";
 
 const LogoParallax = () => {
   return (
-    <Parallax pages={2}>
+    <Parallax pages={2} className="">
       <ParallaxLayer offset={0.5} speed={0}>
         <img src={logoBottom.src} className="parallax" />
       </ParallaxLayer>
