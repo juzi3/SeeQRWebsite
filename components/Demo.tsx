@@ -4,7 +4,7 @@ const Demo = () => {
     const height = 10;
     return (
         <div>
-            {/* <div>
+            <div className='flex'>
                 <div className="LContainer px-32">
                     <h1 className="text-3xl"><u>Cross-Database Comparisons</u></h1>
                     <h4 className="">One of the key features of SeeQR is to compare the 
@@ -17,14 +17,6 @@ const Demo = () => {
                         every edsired scenario. Please refer to "Interface & Features" for
                         more details on execution.
                     </h4>
-                </div>
-
-            </div> */}
-            <div className = 'flex'>
-                <div className="LContainer px-32">
-                    <h1 className="text-3xl"><u>Application Launch</u></h1>
-                    <h4 className="">Upon application launch, navigate to the config menu by clicking on the gear icon on the top left.</h4>
-                    <h4 className="">Ensure that your usernames, passwords, and ports are accurate in the SeeQR config.</h4>
                 </div>
                 <img src = {gif.src} height = {height}/>
             </div>
