@@ -42,7 +42,7 @@ const MainPageIntro = () => {
       }, []);
       
     return(
-        <div className='flex items-center my-25 pl-50 border-2'>
+        <div className='flex items-center my-25 pl-50'>
             <div className={`LContainer slideIn ${isScrolled ? 'opacity-100 ' : 'opacity-0'} transition-opacity duration-500`}>
                 <h1 className='text-6xl pb-10'><u>SeeQR</u></h1>
                 <h2 className='pb-5'><strong>A SQL database efficiency testing tool.</strong></h2>

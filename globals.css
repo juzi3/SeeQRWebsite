@@ -46,6 +46,19 @@
 body{
     background-color: #232323;
 }
+.logo{
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.link:hover {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    transform: scale(1.1);
+    color: green;
+  }
 
 h1, h2, h3, h4, h5, h6{
     color: #d6d6d6;

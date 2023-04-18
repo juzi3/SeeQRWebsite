@@ -50,17 +50,18 @@ const Download = () =>{
         }
       }, []);
 
-
-
-
-
     return(
-        <div className='flex justify-center items-center m-30 mx-150 p-10 border-2'>
-            <button className="bg-green-200 hover:bg-green-400 text-black-700 font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
-                {downloadObject.text}
-            </button>
-            <Image src={downloadObject.image} alt="download" id="download-image" className = "filter brightness-50 invert pb-2.5" height={50} />
-        </div>
+        // <div className='flex justify-center items-center m-30 mx-150 p-10'>
+        //     <button className="bg-green-200 font-semibold text-black-700 py-2 px-4 border-2 rounded hover:bg-green-400 hover:text-white hover:border-transparent ">
+        //         {downloadObject.text}
+        //     </button>
+        //     <Image src={downloadObject.image} alt="download" id="download-image" className = "filter brightness-50 invert pb-2.5" height={50} />
+        // </div>
+        <div className='flex  items-center m-30 mx-150 p-10'>
+        <Image src={mac} alt="download" id="download-image" className = "filter brightness-50 invert pb-2.5" height={100} />
+        <Image src={windows} alt="download" id="download-image" className = "filter brightness-50 invert pb-2.5" height={100} />
+        <Image src={linux} alt="download" id="download-image" className = "filter brightness-50 invert pb-2.5" height={100} />
+    </div>
     )
 
 }

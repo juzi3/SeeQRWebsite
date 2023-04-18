@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import Logo from '../assets/1.png';
 
 const NavBar = ({showFadeEffect = true}) => {
-
     const [showNav, setShowNav] = useState(false);
     useEffect(() => {
         if (showFadeEffect) {
@@ -25,18 +25,17 @@ const NavBar = ({showFadeEffect = true}) => {
  
     return(
         <>
-  <nav
-        className={`bg-green-300 p-5 flex flex-row space-between justify-between fixed top-0 left-0 right-0 z-50 ${showNav ? 'opacity-95 ' : 'opacity-0'} transition-opacity duration-500`}
-      >
-            <div>
-                <h2>SeeQR</h2>
+  <nav className={`bg-white px-5 flex flex-row  items-center space-between justify-between fixed top-0 left-0 right-0 z-50 ${showNav ? 'opacity-95 ' : 'opacity-0'} transition-opacity duration-500`}>
+            <div className='flex items-center'>
+                <h2 className='text-3xl text-black'>SeeQR</h2>
+                <img src = {Logo.src} className = 'logo'/>
             </div>
-            <div className = ''>
-                <Link href = "/" className = 'px-2.5'>Home</Link>
+            <div className = 'pr-15 '>
+                <Link href = "/" className = 'px-10 link'>Home</Link>
                 <a> | </a>
-                <Link href = "/docs" className = 'px-2.5'>Docs</Link>
+                <Link href = "/docs" className = 'px-10 link'>Docs</Link>
                 <a> | </a>
-                <Link href = "/team" className = 'px-2.5'>Team</Link>
+                <Link href = "/team" className = 'px-10 link'>Team</Link>
             </div>
         </nav>
         </>
