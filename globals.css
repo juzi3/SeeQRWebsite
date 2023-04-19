@@ -2,70 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 
-    /* background-color: gray; */
+  /* background-color: gray; */
 }
 
 /* Hide the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    display: none;
-  }
-  
-  /* Set the scrollbar track color */
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-  
-  /* Set the scrollbar width to zero */
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-  
+  display: none;
+}
+
+/* Set the scrollbar track color */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Set the scrollbar width to zero */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-100%);
   }
-  
-  .slideIn {
-    animation: 1s ease-out 0s 1 slideInLeft;
+  100% {
+    transform: translateX(0);
   }
+}
+
+.slideIn {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
 
 .parallax {
-    height: 275px;
+  height: 275px;
 }
 
-body{
-    background-color: #232323;
+body {
+  background: #2f2f2f
 }
-.logo{
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+.logo {
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .link:hover {
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-    transform: scale(1.1);
-    color: green;
-  }
-
-h1, h2, h3, h4, h5, h6{
-    color: #d6d6d6;
-    font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  transform: scale(1.1);
+  color: green;
 }
 
-.LContainer{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d6d6d6;
+  font-family: "Poppins", sans-serif;
+}
+
+.LContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,71 +78,68 @@ h1, h2, h3, h4, h5, h6{
   width: 45%;
 }
 
-  .image-stack {
-    position: relative;
-    height: 0;
-    width: 100%;
-  }
-  
-  .image-stack img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation-name: stack;
-    animation-timing-function: ease-out;
+.image-stack {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
 
-  }
-  
-  @keyframes stack {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
+.image-stack img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: stack;
+  animation-timing-function: ease-out;
+}
 
-    }
+@keyframes stack {
+  from {
+    transform: translateY(-100%);
   }
+  to {
+    transform: translateY(0);
+  }
+}
 
-  @keyframes unstack {
-    from {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    to {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
+@keyframes unstack {
+  from {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  
-  .image-stack img:nth-child(1) {
-    z-index: 4;
-    animation-duration: 1s; /* slowest */
-    height: 400px;
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-  
-  .image-stack img:nth-child(2) {
-    z-index: 3;
-    top: 40px;
-    animation-duration: 0.8s; /* slower */
-    height: 400px;
-  }
-  
-  .image-stack img:nth-child(3) {
-    z-index: 2;
-    top: 80px;
-    animation-duration: 0.6s; /* faster */
-    height: 400px;
-  }
-  
-  .image-stack img:nth-child(4) {
-    z-index: 1;
-    top: 120px;
-    animation-duration: 0.4s; /* fastest */
-    height: 400px;
-  }
-  
-  .image-stack {
+}
+
+.image-stack img:nth-child(1) {
+  z-index: 4;
+  animation-duration: 1s; /* slowest */
+  height: 400px;
+}
+
+.image-stack img:nth-child(2) {
+  z-index: 3;
+  top: 40px;
+  animation-duration: 0.8s; /* slower */
+  height: 400px;
+}
+
+.image-stack img:nth-child(3) {
+  z-index: 2;
+  top: 80px;
+  animation-duration: 0.6s; /* faster */
+  height: 400px;
+}
+
+.image-stack img:nth-child(4) {
+  z-index: 1;
+  top: 120px;
+  animation-duration: 0.4s; /* fastest */
+  height: 400px;
+}
+
+.image-stack {
   position: relative;
   height: 0;
   width: 100%;
@@ -148,4 +150,12 @@ h1, h2, h3, h4, h5, h6{
   animation-name: stack;
   animation-timing-function: ease-in;
   animation-duration: 0.5s;
+}
+
+.login__gif {
+  height: 25em;
+}
+
+.download__text {
+  font-size: 2em;
 }
