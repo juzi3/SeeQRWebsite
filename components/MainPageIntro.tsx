@@ -44,7 +44,7 @@ const MainPageIntro = () => {
     return(
         <div className='flex items-center my-25 pl-50'>
             <div className={`LContainer slideIn ${isScrolled ? 'opacity-100 ' : 'opacity-0'} transition-opacity duration-500`}>
-                <h1 className='text-6xl pb-10'><u>SeeQR</u></h1>
+            <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-emerald-100">SeeQR</span></h1>
                 <h2 className='pb-5'><strong>A SQL database efficiency testing tool.</strong></h2>
                 <h4>SeeQR is a convenient one-stop shop for efficient SQL database manipulation and performance testing. SeeQR can be used throughout the database life-cycle, from creation to testing.</h4>
             </div>
