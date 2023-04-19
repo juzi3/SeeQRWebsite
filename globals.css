@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* background-color: gray; */
+}
+
+/* Hide the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Set the scrollbar track color */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Set the scrollbar width to zero */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideIn {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.parallax {
+  height: 275px;
+}
+
+body {
+  background-color: #fcf5e5;
+  background-image: -webkit-linear-gradient(25deg, #fcf5e5 50%, #27213C 50%);
+}
+
+.logo {
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.link:hover {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  transform: scale(1.1);
+  color: green;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d6d6d6;
+  color: black;
+}
+
+.homepage__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 45%;
+}
+
+.image-stack {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+.image-stack img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: stack;
+  animation-timing-function: ease-out;
+}
+
+@keyframes stack {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes unstack {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.image-stack img:nth-child(1) {
+  z-index: 4;
+  animation-duration: 1s; /* slowest */
+  height: 400px;
+}
+
+.image-stack img:nth-child(2) {
+  z-index: 3;
+  top: 40px;
+  animation-duration: 0.8s; /* slower */
+  height: 400px;
+}
+
+.image-stack img:nth-child(3) {
+  z-index: 2;
+  top: 80px;
+  animation-duration: 0.6s; /* faster */
+  height: 400px;
+}
+
+.image-stack img:nth-child(4) {
+  z-index: 1;
+  top: 120px;
+  animation-duration: 0.4s; /* fastest */
+  height: 400px;
+}
+
+.image-stack {
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+.image-stack.stacked img {
+  position: relative;
+  animation-name: stack;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+.login__gif {
+  height: 25em;
+}
+
+.download__text {
+  font-size: 2em;
+}
+
+/* .circle-1, .circle-2, .circle-3, .circle-4, .circle-5,
+.circle-6, .circle-7, .circle-8, .circle-9,.circle-10 {
+
+}
+
+.circle-11, .circle-12, .circle-13, .circle-14, .circle-15, 
+.circle-16, .circle-17,.circle-18, .circle-19, .circle-20 {
+  padding-left: 25px;
+}
+
+.circle-21, .circle-22, .circle-23, .circle-24, .circle-25,
+.circle-26, .circle-27, .circle-28, .circle-29, .circle-30 {
+  padding-left: 50px;
+}
+
+.circle-31, .circle-32, .circle-33, .circle-34, .circle-35,
+.circle-36, .circle-37, .circle-38, .circle-39,.circle-40 {
+  padding-left: 75px;
+}
+
+.circle-41, .circle-42, .circle-43,.circle-44,.circle-45 {
+  padding-left: 100px;
+}
+
+.circle-1, .circle-11, .circle-21, .circle-31, .circle-41 {
+  padding-top:px;
+} */
+
+.circle:hover {
+  z-index: 1;
+}

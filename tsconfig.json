@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/index.ts"
-  ],
+, "components/Teams.js"  ],
   "exclude": [
     "node_modules"
   ]

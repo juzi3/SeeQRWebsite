@@ -1,10 +1,17 @@
-import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBar';
+
+import MainPageIntro from '../components/MainPageIntro';
+import Demo from '../components/Demo';
+import Download from '../components/Download';
 
 const HomePage = () => {
+
   return (
     <>
-      <NavBar />
-      <h1>HOME PAGE</h1>
+      <NavBar showFadeEffect={true} />
+      <MainPageIntro />
+      <Demo />
+      <Download />
     </>
   );
 };
