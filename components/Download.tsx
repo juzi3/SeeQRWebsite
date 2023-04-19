@@ -3,8 +3,8 @@ const Download = () => {
     <>
       <h2 className="download__text text-center mt-5">
         Download{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-emerald-100">
-          SeeQR
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-800 from-emerald-300">
+          <strong>SeeQR</strong>
         </span>
       </h2>
       <div className="flex items-center justify-center my-10 mx-30">

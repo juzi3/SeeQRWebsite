@@ -47,6 +47,9 @@ module.exports = {
         windows: 'url("./assets/windows.png")',
         linux: 'url("./assets/linux.png")',
       },
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+      }
     },
   },
   plugins: [],

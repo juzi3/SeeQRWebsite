@@ -4,7 +4,7 @@ const Demo = () => {
   return (
     <>
       <div className="flex">
-        <div className="LContainer px-32">
+        <div className="homepage__div px-32">
           <h1 className="text-3xl">
             <u>Easy Setup</u>
           </h1>
