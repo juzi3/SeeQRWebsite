@@ -48,6 +48,18 @@ body {
   background-image: -webkit-linear-gradient(25deg, #fcf5e5 50%, #27213C 50%);
 }
 
+.demo_div {
+  padding: 7rem 0;
+}
+
+.docs{
+  background-color: #fcf5e5;
+}
+
+.navbar {
+  background-color: #27213c;
+}
+
 .logo {
   height: 50px;
   margin: 0 auto;
@@ -59,7 +71,7 @@ body {
   transition: transform 0.3s ease-in-out;
   display: inline-block;
   transform: scale(1.1);
-  color: green;
+  color: white;
 }
 
 h1,
@@ -156,10 +168,43 @@ h6 {
 
 .login__gif {
   height: 25em;
+  max-width: 640px;
 }
 
 .download__text {
   font-size: 2em;
+}
+
+.image-container {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .text-container {
+  opacity: 1;
+}
+
+.image-container:hover .circle {
+  filter:blur(2px);
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.circle:hover {
+  z-index: 1;
 }
 
 /* .circle-1, .circle-2, .circle-3, .circle-4, .circle-5,
@@ -189,7 +234,3 @@ h6 {
 .circle-1, .circle-11, .circle-21, .circle-31, .circle-41 {
   padding-top:px;
 } */
-
-.circle:hover {
-  z-index: 1;
-}

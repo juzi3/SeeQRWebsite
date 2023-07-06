@@ -1,9 +1,9 @@
 import gif from "../assets/SeeQRLogin.gif";
 
-const Demo = () => {
+const Demo3d = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex demo_div">
         <div className="homepage__div px-32">
           <h1 className="text-3xl">
             <u>Easy Setup</u>
@@ -22,4 +22,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default Demo3d;

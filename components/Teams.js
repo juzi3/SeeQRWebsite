@@ -1,6 +1,14 @@
 import { useEffect } from 'react';
 
 const people = [
+  { name: 'Eric Lai', github: 'https://github.com/paranoidFrappe' },
+  { name: 'Jamie Zheng', github: 'https://github.com/haemie' },
+  { name: 'Julian Macalalag', github: 'https://github.com/juzi3' },
+  { name: 'Nathan Chong', github: 'https://github.com/nathanhchong' },
+  { name: 'Chase Sizemore', github: 'https://github.com/ChaseSizemore' },
+  { name: 'Junaid Ahmed', github: 'https://github.com/junaid-ahmed7' },
+  { name: 'Anthony Deng', github: 'https://github.com/anthonyadeng' },
+  { name: 'Oscar Romero', github: 'https://github.com/creaturenex' },
   { name: 'Aya Moosa', github: 'https://github.com/Hiya-its-Aya' },
   { name: 'Trevor Ferguson', github: 'https://github.com/TrevorJFerguson' },
   { name: 'Pauline Nguyen', github: 'https://github.com/paulinekpn' },
@@ -39,30 +47,30 @@ const people = [
   { name: 'Serena Kuo', github: 'https://github.com/serenackuo' },
   { name: 'Timothy Sin', github: 'https://github.com/timothysin' },
   { name: 'Vincent Trang', github: 'https://github.com/vincentt114' },
-  { name: 'Chase Sizemore', github: 'https://github.com/ChaseSizemore' },
-  { name: 'Junaid Ahmed', github: 'https://github.com/junaid-ahmed7' },
-  { name: 'Anthony Deng', github: 'https://github.com/anthonyadeng' },
-  { name: 'Oscar Romero', github: 'https://github.com/creaturenex' },
 ];
 
 const Teams = () => {
   return (
-    <div className="grid grid-cols-7 grid-rows-6 gap-10">
+    <div className="grid grid-cols-7 grid-rows-6 gap-10 mb-[10rem]">
       {people.map((person, index) => (
-        <img
-          className="rounded-full grid-item hover:cursor-pointer hover:scale-200 transition duration-500 ease-in-out"
-          href={person.github}
-          src={`https://avatars.githubusercontent.com/${person.github.replace(
-            'https://github.com/',
-            ''
-          )}`}
-          alt={person.name}
-          width={50}
-          height={50}
-          onClick={() => {
-            window.location.href = person.github;
-          }}
-        />
+                <div className="relative" key={index}>
+                <div className="image-container hover:z-50 hover:cursor-pointer hover:scale-175 transition duration-500 ease-in-out" onClick={() => window.location.href = person.github}>
+                  <img
+                    className="circle rounded-full hover:z-50"
+                    href={person.github}
+                    src={`https://avatars.githubusercontent.com/${person.github.replace(
+                      'https://github.com/',
+                      ''
+                    )}`}
+                    alt={person.name}
+                    width={100}
+                    height={50}
+                  />
+                  <div className="text-container">
+                    <p className="text ">{person.name}</p>
+                  </div>
+                </div>
+              </div>
       ))}
     </div>
   );
